@@ -1,123 +1,237 @@
-<!doctype html>
-
-<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
-
+<!DOCTYPE html>
 <html>
-
-<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
-
-	<head>
-		<title>Личная страница Веры Кузнецовой</title>
-	 	<!-- Required meta tags -->
-	 	<meta charset="utf-8">
+<head>
+<title>Личная страница Киры Чугаевой</title>
+<meta charset="utf-8">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<meta name="description" content="Личная страница и контакты">
 
-		<!-- Bootstrap Core CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
-
-	</head>
-	
-<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
-	<body>
-
-<!-- меню (navigation bar) -->
-
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-
-<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
-			<div class="container"> 
+<style>
+body {
+  background-image: url('https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/%D1%84%D0%BE%D0%BD.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body style="background-color:tan">
+			<div class="container" style="font-family:courier; background-image: url('https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/%D1%84%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D0%B8.jpg');"> 
 				<div class="navbar-header"> 
 					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
 				</div> 
 				<nav class="collapse navbar-collapse" id="bs-navbar"> 
 					<ul class="nav navbar-nav navbar-right"> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2024/index.html">Страница курса</a> </li> 
 						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
-<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
 					</ul>
 				</nav> 
 			</div>
 		</nav>
 
-<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+<div class="container" style="padding:20px; padding-top:50px;">
+    <div class="col-md-6">
+            <p style="font-family:courier; font-size:150%; text-align:right">#моя_личная_страница</p>
+            <h1 style="font-family:courier;font-size:500%;"><mark>Кира Чугаева</mark> </h1>
 
-		<header style="background-color:plum; padding-top:70px; "> 
-			<div class="container"> 
-				<div class="row">
-					<div class="col-md-4">
-						<br><br>
-<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Оля Ляшевская</h1>
-						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
-					</div>
-					<div class="col-md-4">
-<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
-<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="myphoto.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
-					</div>
+            <p style="font-family:courier; font-size:200%">душа филолога, мозг лингвиста, мечта айтишника<a href="#bottom">*</a></p>
+			<div style="padding-top:20px; " class="col-md-5">
+			    <img  src="https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/%D0%B1%D0%BE%D0%BA%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B5%D0%B7%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F.jpg" >
+				<div style=" background-image: url('https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/%D1%84%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9.jpg')">
+				
+					<nav>
+					<h3 style="font-family:courier; font-size:200%; padding-top:20px">Я в соцсетях:</h3>
+						<ul style="font-family:courier; font-size:150%; padding-top:20px">
+							<li><a href="https://vk.com/sharloti">VK</a></li>
+							<li><a href="https://t.me/melodeclamatorr">Telegram</a></li>
+							<li><a href="https://ru.pinterest.com/melodeclamatorr">Pinterest</a><br></br></li>
+						</ul>
+					</nav>
 				</div>
+				
 			</div>
-		</header>
-
-<!-- часть страницы, которая под шапкой -->
-		<section id="portfolio">
-			<div class="container">
-
-<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
-				<div class="col-md-3">
-
-<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
-					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
-					</article>
-					<article>
-						<h3>Родной город</h3>
-						<p>Москва</p>
-					</article>
-					<article>
-						<h3>Школа</h3>
-<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
-					</article>
-				</div>
-
-				<div class="col-md-6">
-					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
-					</article>
-				</div>
-
-				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
-<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
-					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
-					</ul>
-				</div>
+			<div style="font-family:courier ; padding-left:20px; background-image: url('https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/%D1%84%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D0%B8.jpg');" class="col">
+			    <h2 style="font-size:200%;"> </h2>
+		        <p style="font-size:150%; padding-top:10px"> Родилась и выросла в <a href="https://www.yandex.ru/search/?text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C&lr=117555"> Перми</a>, окончила <a href="https://vk.com/school7prm">Школу №7 с углублённым изучением английского языка г. Перми</a>. Студент 1 курса бакалавриата <a href="https://www.hse.ru/">НИУ ВШЭ</a>, <a href="https://nnov.hse.ru/ba/ling/about">ОП "Фундаментальная и компьютерная лингвистика"</a>.
+			    <br></br></p>
+                	<div class="col-md-6" > 
+			            <h3 style="font-family:courier"><mark>Мой тотемный зверь:</mark></h3>
+			            <img src="https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/photo_2024-07-11_20-00-08%20(1).jpg"> 
+			        </div>		
 			</div>
-		</section>
-
-<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
-		<footer class="bs-docs-footer"> 
-			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
+		<div style="padding-top: 20px; font-family:courier; font-size:150%; background-color:wheat" class="col-md-6">	
+		<h1 > <i>"Ненавижу всяческую мертвечину! Обожаю всяческую жизнь!" - В.В. Маяковский </i></h1>
+		</div>
+		<div style="padding-top: 20px; font-family:courier; font-size:150%" class="col-md-6">	
+		<h2><mark>Мои любимые места:</mark></h2>
+		</div>
+			<div style="padding-top: 20px; font-family:courier; font-size:150%" class="col-md-10">
+				<h1 style="padding-left:50px; text-align:right">*<a href="https://yandex.ru/maps/50/perm/geo/skver_imeni_olega_novosyolova/1563035908/?ll=56.197158%2C58.007241&z=17"><mark>*тык*</mark></a>***<a href="https://yandex.ru/maps/geo/posyolok_kuyeda/53095462/?ll=55.588033%2C56.434621&z=13"><mark>*тык*<mark></a>***</h1>
+				<h1 style="padding-left:40px;text-align:left">***<a href="https://yandex.ru/maps/org/sirius/1271411859/?ll=39.964789%2C43.400534&z=16"><mark>*тык*<mark></a>***<a href="https://yandex.ru/maps/org/pansionat_zvenigorodskiy/1372222312/?ll=36.854462%2C55.729826&z=12"><mark>*тык*</mark></a>*</h1>
 			</div>
-		</footer>
+    </div>
+				
+    <div class="col-md-6" style="background-color:Wheat">
+        <img style="padding:20px; padding-top:35px;" src="https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/%D1%84%D0%BE%D1%82%D0%BE%20%D1%81%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9%20%D0%B1%D0%BE%D0%BA%D0%BE%D0%B2%D0%B8%D0%BD%D0%BE%D0%B9%20(2).jpg" >
+	    <div style="font-family:courier; font-size:120%" class="col-md-6">
+				<p>Год рождения:<b>2006</b><br>Знак зодиака:<b>Весы</b><br>Рост:<b>173см</b></p>
+	    </div>
+		<div style="font-family:courier; font-size:120%" class="col-md-6">
+				<p>Язык: <b>русский</b><br>Конфессия: <b>православие</b><br>INFP:<b>ENFP-A, Борец</b></p>
+	    </div>
+    </div>
+    <div class="col-md-6">
+	     <h3 style="text-align:right; font-family:courier; "><mark>Мои любимые</h3>
+		 
+		<div  style="padding-left:80px; font-family:courier" id="vk_playlist_294720602_50"></div>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?173"></script>
+<script type="text/javascript">
+  (function() {
+    VK.Widgets.Playlist("vk_playlist_294720602_50", 294720602, 50,'ced091c77df342f0b9');
+  }());
+</script>
+	</div>
+	<div style="padding-top:20px; backgroung-image:url('https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/1b3ef733-5b9c-4523-bef3-f2120552c066.jpg')" class="col-md-6">
+	<h2 style="text-align:right; padding-right:15px; font-family:courier; padding-bottom:20px"><mark>Мой любимый мем:<mark></h2>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/vtv1.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/vtv2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/vtv3.jpg" style="width:100%">
+  
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</div>
+</div> 
+
+</body>
+        <footer class="bs-docs-footer"> 
+			<div style="font-family:courier; background-image: url('https://raw.githubusercontent.com/chugcha/evrthngfrhtml/main/%D1%84%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D0%B8.jpg');" class="container"> 
+			<p style="padding-top:20px; text-align:left"><a style="color:black" name="bottom">* Я не могла пожертвовать такой вкусной конструкцией ради передачи смысла фразы "мечтаю стать айтишником". Прошу всерьёз не воспринимать, а улыбнуться и подумать: "Прикольно звучит".</a></p>
+				<p style=" text-align:right; ">&copy; К. Чугаева, 2024</p> 
+				
+			</div>
+		</footer>	
 	</body>
 </html>
