@@ -1,123 +1,160 @@
 <!doctype html>
 
-<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
-
 <html>
-
-<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
-
 	<head>
-		<title>Личная страница Веры Кузнецовой</title>
-	 	<!-- Required meta tags -->
-	 	<meta charset="utf-8">
-	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 		<meta name="description" content="Личная страница и контакты">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 	<meta charset="utf-8">
+		<title>Личная страница Чаплиной Дарьи 1 купс фикл 262 группа</title>
 
-		<!-- Bootstrap Core CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 	</head>
-	
-<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
-	<body>
 
-<!-- меню (navigation bar) -->
+	<body>
 
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
 
-<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
-			<div class="container"> 
-				<div class="navbar-header"> 
-					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
-				</div> 
-				<nav class="collapse navbar-collapse" id="bs-navbar"> 
-					<ul class="nav navbar-nav navbar-right"> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
-<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a>
+				</div>
+				<nav class="collapse navbar-collapse" id="bs-navbar">
+					<ul class="nav navbar-nav navbar-left">
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/baling_262.html">Страница группы</a> </li>
+
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2026/index.html">Страница курса</a> </li>
+						
 					</ul>
-				</nav> 
+				</nav>
 			</div>
 		</nav>
 
-<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
 
-		<header style="background-color:plum; padding-top:70px; "> 
-			<div class="container"> 
+
+		<header style="background-color:#f9f9f9; padding-top:80px;color:#6e26e7; ">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
-						<br><br>
-<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Вера Кузнецова</h1>
-						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
+					<div class="col-md-6">
+
+						<h1>Чаплина Дарья фикл 1 курс</h1>
+					</div>
+					<div class="col-md-6">
+
+<img src="myphoto.jpg" style="height:360px; margin:00px 40px 20px 20px; " >
 					</div>
 					<div class="col-md-4">
-<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
-<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Petrus_Christus_-_Portrait_of_a_Young_Woman_-_Google_Art_Project.jpg/368px-Petrus_Christus_-_Portrait_of_a_Young_Woman_-_Google_Art_Project.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
+
+						<br><h2>Учусь на фикле в ВШЭ</h2></br>
+						
+						<br><h3>Живу в Москве</h3></br>
 					</div>
 				</div>
 			</div>
 		</header>
 
-<!-- часть страницы, которая под шапкой -->
+
 		<section id="portfolio">
 			<div class="container">
 
-<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
-				<div class="col-md-3">
 
-<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
-					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
-					</article>
-					<article>
-						<h3>Родной город</h3>
-						<p>Новосибирск</p>
-					</article>
+				<div class="col-md-3">
 					<article>
 						<h3>Школа</h3>
-<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
+
+						<p><mark>Первое училище войск Посейдона</mark></p>
 					</article>
 				</div>
+		
+				<div class="col-md-6">
+    <article style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h3 style="color: #2c3e50; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ℹ️ Обо мне</h3>
 
+
+        <details style="font-family: 'Helvetica Neue', Arial, sans-serif; color: #333;">
+
+            <summary style="font-weight: 600; color: #1e3799; padding: 5px 0; list-style: none;">
+                🔍 Тык
+            </summary>
+            <p style="margin-top: 12px; padding: 10px 15px; background-color: #fff; border-left: 4px solid #38ada9; border-radius: 4px; font-style: italic; color: #555; line-height: 1.6;">
+                я изучаю <span style="background-color: #ffeaa7; padding: 2px 6px; border-radius: 3px; font-weight: bold; color: #d35400;">лингвистику</span> и создаю веб-страницы (вырвиглазные конечно но уж извините все бывает в первый раз)
+            </p>
+
+        </details>
+    </article>
+</div>
+<article>
+			<h5>Мои познания в информатике(точно не неправда):<h5>
+					<p>HTML: <progress value="100" max="100"></progress></p>
+					<p>Лингвистика: <progress value="90" max="100"></progress></p>
+					<p>Python: <progress value="40" max="100"></progress></p>
+
+		</article>
+<div style="text-align: center; margin: 20px 0;">
+    <h3> крутая гифка:</h3>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3pmYzFvZjNyeXh3Z3kwaXBkYmhjc25zbGZ3ajQwM2g3cWppNWpsayZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/zIatAEDb9NwwAd3cYE/giphy.gif" alt="Веселая анимация" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+</div>
+<div class="music-container">
+    <h3>🎵 Фоновое сопровождение(4 часовое прочтение Библии на японском весило слишком много поэтому вставить его не удалось(((( но верьте ммне на слово оно должно было быть):</h3>
+		<br>Но я надеюсь вы сможете сами спеть песни которые вам нравяться смотря на этот прелестный плеер</br>
+		<audio controls loop>
+			<source src="mywebpage/mynewpage_Bible.mp3" type="audio/mpeg">
+		</audio>
+</div>
 				<div class="col-md-6">
 					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
+						<blockquote><h3>ВСЕ ОБО МНЕ (а то вдруг вы еще не поняли с кем имеете дело)</h3></blockquote>
+						<details>
+							<summary style="cursor:pointer;font-weight: bold;color:#007bff;">
+								Смотрите как круто я могу перечислить свои навыки:(нажмите сюда)
+							</summary>
+							<p style="margin-top: 10px;padding-left:15px;border-left:3px solid #007bff;">
+								<br>а ой</br>
+								<br>их нет...</br>
+							</p>
+						</details>
+						<p><strong>Скоро надо будет применить свою внимательность...Считайте это профилактикой альцгеймера</strong>
+						<br>я потратила на это несколько часов своей жизни но я об этом не жалею </br></p>
+						<p style="font-family: system-ui, -apple-system, sans-serif; font-size: 15px; line-height: 2.7; color: #2c3e50;">
+    <span style="color: #1e3799; font-weight: 600;">Стану программистом...</span>
+
+    Нет ладно и не хочу чтоб меня заменили нейронки...
+
+    <span style="text-transform: uppercase; font-size: 12px; letter-spacing: 1px; color: #7f8c8d; font-weight: bold;">Решено</span>
+
+    <span style="background-color: #e6f7ff; color: #096dd9; padding: 2px 8px; border-radius: 4px; font-weight: 700;">стану дворницей</span>
+</p>
+
+						<a href="https://yandex.ru/video/preview/9106267784821348006" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s;" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'"> самая лучшая песня года
+
+</a> </br>
+						курсор меняется когда вы жмете на кнопку с лучшей в мире песней. Надеюсь, вы заметили</p>
 					</article>
 				</div>
 
 				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
-<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<h3 style="color: #2c3e50; font-family: 'Segoe UI', sans-serif; font-size: 18px; margin-bottom: 12px;">Я в соцсетях))))</h3>
 					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
+						<li><a href="https://yandex.ru/video/preview/3286916269934311681">VK (мамой клянусь)</a> </li>
+						<li><a href="https://curs-bpla.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=POISK_BPLA_CURS_710207690&utm_content=5755311422|1911210848439046938|57676272805|1&utm_term=%D1%85%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D1%81%D0%B2%D0%BE&etext=2202.Rm8xZCZnwwppY6zm00IdHsm9-B4gkB5_21fiV82kz7ZsiqVNGDZoyitvT24_UQEVftagXuHfWchn2q5x1W_fK3NzemVubnpoYWJkdG95bmc.aa1f9b0d25e6b91027dc90cd1d880339c6063a14&yclid=7173623369540042751">Best site in the world</a></li>
+						<li>У меня нет соцсетей((((</li>
 					</ul>
 				</div>
 			</div>
 		</section>
 
-<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
-		<footer class="bs-docs-footer"> 
-			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
+		<footer class="bs-docs-footer">
+			<div class="container">
+				<p style="text-align:left; ">&copy; <strong>Чаплина Дарья, 2026</strong></p>
 			</div>
 		</footer>
 	</body>
+
 </html>
+
+
+
